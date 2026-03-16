@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人專業介紹 | 個人特色網頁</title>
+    <style>
+        /* 基礎設定 */
+        :root {
+            --linkedin-blue: #0a66c2;
+            --bg-gray: #f3f2ef;
+            --text-dark: #191919;
+            --text-gray: #666666;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+            background-color: var(--bg-gray);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* 區塊通用樣式 */
+        section {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Header 區塊 */
+        header {
+            position: relative;
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+        }
+
+        .banner {
+            height: 150px;
+            background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+        }
+
+        .profile-info {
+            padding: 0 24px 24px 24px;
+            margin-top: -50px;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid var(--white);
+            background: #ccc;
+            object-fit: cover;
+        }
+
+        .name { font-size: 1.5rem; font-weight: bold; margin: 10px 0 5px 0; }
+        .headline { font-size: 1.1rem; color: var(--text-gray); margin-bottom: 10px; }
+        .location { font-size: 0.9rem; color: var(--text-gray); }
+
+        /* 經歷與技能樣式 */
+        .exp-item { margin-bottom: 20px; }
+        .exp-title { font-weight: bold; font-size: 1.1rem; }
+        .exp-company { color: var(--linkedin-blue); font-weight: 500; }
+        .exp-date { font-size: 0.85rem; color: var(--text-gray); }
+
+        .skills-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .skill-badge {
+            background: #eef3f8;
+            color: var(--linkedin-blue);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* 按鈕 */
+        .btn {
+            display: inline-block;
+            background: var(--linkedin-blue);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        .btn:hover { background: #004182; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="banner"></div>
+        <div class="profile-info">
+            <div class="profile-pic" style="background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 40px; color: #999;">👤</div>
+            <div class="name">姓名 / 您的名字</div>
+            <div class="headline">專業職稱 | 核心專長 1 | 核心專長 2</div>
+            <div class="location">台灣，台北市</div>
+            <a href="mailto:yourname@email.com" class="btn">聯絡我</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>關於</h2>
+        <p>
+            在這裡用三到五句話介紹你自己。例如：我是一位擁有 X 年經驗的 [職位]，專注於 [領域]。
+            曾協助團隊達成 [具體成就]，並對 [技術或產業熱情] 充滿好奇心。
+            擅長在複雜的環境中尋找解決方案，並具備優異的跨部門溝通能力。
+        </p>
+    </section>
+
+    <section>
+        <h2>專業經歷</h2>
+        <div class="exp-item">
+            <div class="exp-title">現職 / 職位名稱</div>
+            <div class="exp-company">某某科技有限公司</div>
+            <div class="exp-date">2022 年 1 月 – 至今</div>
+            <ul>
+                <li>負責 [專案名稱]，成功提升了 20% 的運作效率。</li>
+                <li>導入 [新技術/系統]，優化了內部流程。</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-title">前任職位名稱</div>
+            <div class="exp-company">某某設計工作室</div>
+            <div class="exp-date">2020 年 5 月 – 2021 年 12 月</div>
+            <ul>
+                <li>協助客戶開發 [作品類型]，獲得高度評價。</li>
+                <li>管理 5 人規模的小組，確保專案準時交付。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>核心技能</h2>
+        <div class="skills-container">
+            <div class="skill-badge">專案管理 (PMP)</div>
+            <div class="skill-badge">繁體中文</div>
+            <div class="skill-badge">SQL 資料庫</div>
+            <div class="skill-badge">Python 程式開發</div>
+            <div class="skill-badge">跨部門溝通</div>
+            <div class="skill-badge">AI 圖像生成與編輯</div>
+        </div>
+    </section>
+
+    <section style="text-align: center;">
+        <h2>讓我們建立聯繫</h2>
+        <p>如果您對我的經歷有興趣，歡迎隨時聯繫！</p>
+        <p>Email: <a href="mailto:yourname@email.com" style="color: var(--linkedin-blue);">yourname@email.com</a></p>
+    </section>
+</div>
+
+</body>
+</html>
